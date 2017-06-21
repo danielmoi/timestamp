@@ -1,5 +1,30 @@
 {
+  "name": "fcc-timestamp",
+  "description": "[freeCodeCamp Backend challenge 1/5](https://www.freecodecamp.com/challenges/timestamp-microservice)",
+  "version": "0.0.1",
+  "main": "app.js",
   "dependencies": {
-    "express": "^4.15.3"
-  }
+    "express": "^4.15.3",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "go": "watchexec -e js -r yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmoi/timestamp.git"
+  },
+  "keywords": [
+    "freecodecamp",
+    "timestamp"
+  ],
+  "author": "Daniel Moi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielmoi/timestamp/issues"
+  },
+  "homepage": "https://github.com/danielmoi/timestamp#readme"
 }
