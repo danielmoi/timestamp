@@ -3,4 +3,20 @@ html
     link(href='/dist/style.css', rel='stylesheet')
 
   body
-    h1 Hello
+    .wrapper
+      .header
+        .header__title Timestamprr
+
+      .main
+        form.form(action="/convert/" method="POST")
+          label.label(for="data") Data to convert
+          input.input(type="text" name="data" autofocus)
+
+          .form__actions
+            input.button(type="submit" value="Convert")
+
+
+        .results
+
+
+      .footer Made with hearts by Daniel Moi

@@ -1,8 +1,13 @@
-@import "partials/_header";
+@import "normalize.css";
 
-body {
-  font-family: Helvetica;
-  font-size: 2rem;
-  display: flex;
-  color: hotpink;
-}
+@import "partials/_variables";
+@import "partials/_globals";
+@import "partials/_typography";
+
+@import "partials/_input";
+@import "partials/_button";
+@import "partials/_form";
+
+@import "partials/_header";
+@import "partials/_main";
+@import "partials/_footer";

@@ -1,0 +1,7 @@
+.button {
+  border: 1px solid $primary;
+  height: 3rem;
+  padding: 0.33rem 0.67rem;
+  background: none;
+  color: $primary;
+}

@@ -1,7 +1,10 @@
+# dev
 node_modules
 
+# git
 .git
 
+# logs
 *.log
 
 # build

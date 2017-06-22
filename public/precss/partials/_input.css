@@ -1,0 +1,12 @@
+.input {
+  height: 3rem;
+  outline: none;
+  padding: 0.5rem;
+  border: 1px solid $gray;
+}
+
+
+.label {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
