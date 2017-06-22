@@ -5,18 +5,30 @@ html
   body
     .wrapper
       .header
-        .header__title Timestamprr
+        .header__title #{title}
 
       .main
-        form.form(action="/convert/" method="POST")
-          label.label(for="data") Data to convert
-          input.input(type="text" name="data" autofocus)
+        .main__section
+          .main__subtitle User stories:
+          .main__text 1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+          .main__text 2) If it does, it returns both the Unix timestamp and the natural language form of that date.
+          .main__text 3) If it does not contain a date or Unix timestamp, it returns null for those properties.
 
-          .form__actions
-            input.button(type="submit" value="Convert")
+        .main__section
+          .main__subtitle Example usage:
+          .main__text
+            a.main__link(href="http://localhost:5001/December%2015,%202015").main__link https://timestamp-ms.herokuapp.com/December%2015,%202015
 
+          .main__text
+            a.main__link(href="http://localhost:5001/1450137600").main__link https://timestamp-ms.herokuapp.com/1450137600
 
-        .results
+        .main__section
+          .main__subtitle Example output:
+          .main__text.main__text--code.
+            {
+              "unix": 1450137600,
+              "natural": "December 15, 2015"
+            }
 
-
-      .footer Made with hearts by Daniel Moi
+      .footer Made with hearts by
+        a.footer__link(href="https://github.com/danielmoi") Daniel Moi

@@ -5,15 +5,15 @@ const router = express.Router();
 
 const getUnix = data => moment(data).valueOf();
 
-const getNatural = data => moment(data).format('DD MMMM YYYY');
+const getNatural = data => moment(data).format('MMMM DD, YYYY');
 
 router.get('/', (req, res) => {
   res.render('index', {
-    title: 'Timestamp',
+    title: 'Timestamp API',
   });
 });
 
-router.get('/convert/:data', (req, res) => {
+router.get('/:data', (req, res) => {
   const data = req.params.data;
   let unix = null;
   let natural = null;

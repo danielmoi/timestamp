@@ -5,4 +5,11 @@
   align-items: center;
   width: 100%;
   bottom: 2rem;
+
+  &__link {
+    margin-left: 0.3rem;
+    &:hover {
+      color: $primary;
+    }
+  }
 }
