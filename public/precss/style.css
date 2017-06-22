@@ -1,0 +1,8 @@
+@import "partials/_header";
+
+body {
+  font-family: Helvetica;
+  font-size: 2rem;
+  display: flex;
+  color: hotpink;
+}
