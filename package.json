@@ -7,9 +7,8 @@
     "express": "^4.15.3",
     "moment": "^2.18.1",
     "normalize.css": "^7.0.0",
-    "pug": "^2.0.0-rc.2"
-  },
-  "devDependencies": {
+    "pug": "^2.0.0-rc.2",
+
     "autoprefixer": "^7.1.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
