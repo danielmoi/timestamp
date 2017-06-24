@@ -23,7 +23,8 @@
     "start": "node app.js",
     "start:dev": "node app.js PORT=5001",
     "build": "./node_modules/.bin/webpack",
-    "go": "watchexec -e js -r yarn start"
+    "go": "watchexec -e js -r yarn start",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "repository": {
     "type": "git",
