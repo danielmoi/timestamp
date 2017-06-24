@@ -23,7 +23,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "start:dev": "node app.js PORT=5001",
-    "assets": "./node_modules/.bin/webpack -w",
+    "build": "./node_modules/.bin/webpack",
     "go": "watchexec -e js -r yarn start"
   },
   "repository": {
